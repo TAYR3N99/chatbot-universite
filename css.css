@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins: 400,500, 600, 700&display-swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+#chatbot {
+  width: 350px;
+  max-height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-y: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#chat-header {
+  background-color: rgba(0, 61, 126, 255);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#chat-header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+#chat-header h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#chat-container {
+  padding: 10px;
+}
+
+#chat-output {
+  margin-bottom: 10px;
+}
+
+#chat-output strong {
+  font-weight: bold;
+}
+
+#user-input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.loading-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 61, 126, 255);
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+}
+
+.chatbot-popup {
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  animation: slide-up 0.5s ease;
+}
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#close-chat:hover {
+  color: #ff5555;
+}
+
+#minimize-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#minimize-chat:hover {
+  color: #ffc107;
+}
+#chatbot {
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  animation: popUp 0.5s ease-in-out;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#chat-header {
+  background-color: rgba(0, 61, 126, 255);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+#chat-header img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+#chat-container {
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+#chat-output {
+  margin-bottom: 10px;
+}
+
+#user-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 185px;
+}
+
+#toggle-chatbot {
+  background-color: rgb(39, 81, 131);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toggle-chatbot:hover {
+  background-color: #0056b3;
+}
+
+#chat-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  animation: popUp 0.5s ease-in-out;
+}
+
+#chat-toggle-button button {
+  background-color: rgba(0, 61, 126, 255);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon Chatbot</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.13.0/dist/tf.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500, 700,900 | Work+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="chatbot">
+        <div id="chat-header">
+            <img src="unnamed.jpg" alt="Chatbot Icon">
+            <h1>Ibn Zohr</h1> 
+            
+            <button id="toggle-chatbot">Fermer</button>
+        </div>
+        <div id="chat-container">
+            <div id="chat-output"></div>
+            <input type="text" id="user-input" placeholder="Posez votre question..." />
+        </div>
+    </div>
+    <div id="chat-toggle-button" class="animate-popup">
+        <button id="open-chatbot">Chat</button>
+    </div>
+    <div id="chatbot">
+        <div id="chat-header">
+             
+        </div>
+        <div id="chat-container">
+            <div id="chat-output"></div>
+            <input type="text" id="user-input" placeholder="Posez votre question..." />
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const chatbot = document.getElementById("chatbot");
+            chatbot.classList.add("show");
+        });
+    </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js.js"></script>
+        
+</body>
+</html>
