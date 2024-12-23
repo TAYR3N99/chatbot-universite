@@ -47,6 +47,5 @@ Ce projet peut être déployé sur Netlify :
 - **Akram Takhabbart**
 - [Lien vers le dépôt GitHub](https://github.com/TAYR3N99/chatbot-universite)
 
-## Remerciements
-Merci à l'université Ibn Zohr et au superviseur pour leur soutien dans le développement de ce projet.
+
 
